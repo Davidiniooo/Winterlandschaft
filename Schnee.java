@@ -12,7 +12,9 @@ public class Schnee
     {
      s1 = new Circle[250];
      velocity = new double[250];
+
      Schneeboden.setColor(new Color (245, 245, 245));
+
      for(int i = 0;i<249;i++)
      {
          velocity[i] = Tools.randomNumber(30,80);
@@ -30,6 +32,7 @@ public class Schnee
      public void run()
     {
      while(true){
+
       if(zähler > 1500){
         Schneeboden.move(0,-0.01);
       }
@@ -37,6 +40,7 @@ public class Schnee
         Schneeboden.move(0,0.01);
       }
       zähler = zähler+1;
+
       for(int i = 0;i<249;i++){
        s1[i].setHidden(false);
        if(s1[i].getCenterY()>950){
