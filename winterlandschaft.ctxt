@@ -2,4 +2,6 @@
 comment0.target=winterlandschaft
 comment1.params=
 comment1.target=winterlandschaft()
-numComments=2
+comment2.params=
+comment2.target=void\ run()
+numComments=3
